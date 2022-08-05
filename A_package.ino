@@ -1,7 +1,5 @@
 #include <WiFi.h>
 #include <FirebaseESP32.h>
-#include <FirebaseArduino.h>
-#include <ArduinoJson.h>
 
 #define FIREBASE_HOST "https://esp32andfirebase-f0541-default-rtdb.asia-southeast1.firebasedatabase.app/"
 #define FIREBASE_AUTH "sHHVED50JYjHhV3mwJUg6Y3nWS2D34veVVUHpzMQ"

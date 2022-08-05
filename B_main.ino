@@ -37,7 +37,7 @@ void setup()
 
   Serial.println("------------------------------------");
   Serial.println("Connected...");
-  
+   setSuara();
 }
 
 void loop()
@@ -62,24 +62,34 @@ void loop()
   }
   delay(5000);
   Serial.print("Nominal : ");
-  Serial.println(Firebase.getString("Output/Output_nominal"));
-  String output = Firebase.getString("Output/Output_nominal");
+  //Serial.println(Firebase.getString("Output/Output_nominal"));
+  //String output = Firebase.getString("Output/Output_nominal");
   if (output = "Uang Seratus Ribu Rupiah"){
-    // trigger suara 100k
-  }
+    x = 7
+    loopWarna();
+}
   else if (output = "Uang Lima Puluh Ribu Rupiah"){
-    // trigger suara 50k
+    x = 6
+    loopWarna();
   }
   else if (output = "Uang Dua Puluh Ribu Rupiah"){
-    // trigger suara 20k
+    x = 5
+    loopWarna();
   }
   else if (output = "Uang Sepuluh Ribu Rupiah"){
-    // trigger suara 10k
+    x = 4
+    loopWarna();
   }
   else if (output = "Uang Lima Ribu Rupiah"){
-    // trigger suara 5k
+    x = 3
+    loopWarna();
+  }
+  else if (output = "Uang Dua Ribu Rupiah"){
+    x = 2
+    loopWarna();
   }
   else {
-    // trigger suara 1k
+    x = 1
+    loopWarna();
   }
 }
